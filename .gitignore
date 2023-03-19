@@ -5,3 +5,9 @@ crud-application/crud/.settings
 crud-application/crud/target
 crud-application/crud/.project
 crud-application/crud/.classpath
+job-portal
+employee-management-system/ems-service/.mvn
+employee-management-system/ems-service/.settings
+employee-management-system/ems-service/target
+employee-management-system/ems-service/.project
+employee-management-system/ems-service/.classpath
