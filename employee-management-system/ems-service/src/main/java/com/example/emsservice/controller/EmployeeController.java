@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin
 public class EmployeeController extends Employee {
 
     @Autowired
@@ -19,9 +18,9 @@ public class EmployeeController extends Employee {
         return this.employeeService.addEmployee(employee);
     }
 
-    @GetMapping("/employees/all")
+    @GetMapping("/employees")
     public List<Employee> getEmployees() {
-
+        System.out.println("Hello");
         return this.employeeService.getEmployees();
     }
 
@@ -32,6 +31,7 @@ public class EmployeeController extends Employee {
 
     @PutMapping("employee")
     public Employee updateEmployeeInfo(Employee employee) {
+
         return this.employeeService.updateEmployeeInfo(employee);
     }
 
