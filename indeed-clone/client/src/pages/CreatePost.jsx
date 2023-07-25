@@ -42,7 +42,6 @@ const defaultObj = {
     description: '',
     experience: '',
     technology: [],
-    date: '',
     salary: ''
 }
 
@@ -65,7 +64,7 @@ const CreatePost = () => {
     }
 
     const saveJob = async () => {
-        await savePost({ ...data, date: new Date().toString() });
+        await savePost(data);
         navigate(routePath.posts);
     }
 

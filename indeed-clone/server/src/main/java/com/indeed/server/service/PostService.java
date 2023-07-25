@@ -1,12 +1,13 @@
 package com.indeed.server.service;
 
-import com.indeed.server.model.Post;
+import com.indeed.server.dto.PostDTO;
+import com.indeed.server.model.PostModal;
 
 import java.util.List;
 
 public interface PostService {
 
-    public List<Post> getAllPosts();
+    public List<PostModal> getAllPosts();
 
-    public Post savePost(Post post);
+    public PostModal savePost(PostDTO post);
 }

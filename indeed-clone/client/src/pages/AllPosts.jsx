@@ -33,7 +33,7 @@ const FindButton = styled(Button)({
 
 const PostWrapper = styled(Box)({
     display: 'flex',
-    alignItems: 'center',
+    flexWrap: 'wrap',
     justifyContent: 'center',
     marginTop: 50,
     '& > div': {
@@ -41,13 +41,14 @@ const PostWrapper = styled(Box)({
         borderRadius: 10,
         margin: 10,
         width: '30%',
-        height: 300
+        height: 300,
     }
 })
 
 const AllPosts = () => {
 
     const [posts, setPosts] = useState([]);
+    const [text, setText] = useState("");
 
     useEffect(() => {
         const getData = async () => {
@@ -64,6 +65,7 @@ const AllPosts = () => {
                 <Box>
                     <InputBase 
                         placeholder='Job title'
+                        onChange={(e) => setText(e.target.value)}
                     />
                     <SearchIcon />
                 </Box>
@@ -73,7 +75,7 @@ const AllPosts = () => {
             </SearchContainer>
             <PostWrapper>
                 {
-                    posts.map(post => (
+                    posts.filter(post => post.profile.toLowerCase().includes(text.toLowerCase())).map(post => (
                         <Card>
                             <CardContent>
                                 <Typography variant="h5">{post.profile}</Typography>
@@ -87,7 +89,7 @@ const AllPosts = () => {
                                 <Typography><b>Experience</b>: {post.experience}</Typography>
                                 <Typography><b>Technology</b>: {post.technology}</Typography>
                                 <Typography style={{ color: '#6f6f6f', marginTop: 'auto' }}>
-                                    posted on {new Date(post.date).toLocaleDateString()}
+                                    posted on {new Date(post.createdAt).toLocaleDateString()}
                                 </Typography>
                             </CardContent>
                         </Card>
