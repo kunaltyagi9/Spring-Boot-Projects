@@ -5,7 +5,7 @@ export const fetchUserData = async (data) => {
     const headers = { phone: data.phone }
 
     try {
-        const response = await axios.get(`${API_URL}/fetch-user-detail`, { headers: headers });
+        const response = await axios.get(`${API_URL}/get-user-detail`, { headers: headers });
         return response?.data;
     } catch (error) {
         console.log('Error while fetching user data', error.message);

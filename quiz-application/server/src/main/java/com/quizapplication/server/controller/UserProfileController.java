@@ -34,4 +34,16 @@ public class UserProfileController {
 
         return response;
     }
+
+    @GetMapping(APIConstants.GET_USER_DETAIL)
+    public ResponseEntity<Object> getUserDetail(@RequestHeader Map<String, String> requestHeaderMap) {
+
+        log.info("GET USER DETAIL CONTROLLER ##### ", UserProfileController.class.getName());
+
+        RequestHeaderDTO requestHeaderDTO = Utility.getRequestHeaderDTO(requestHeaderMap);
+
+        ResponseEntity<Object> response = userProfileService.getUserData(requestHeaderDTO);
+
+        return response;
+    }
 }

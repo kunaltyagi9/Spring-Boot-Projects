@@ -30,7 +30,7 @@ const Login = ({ isUserAuthenticated }) => {
     const fetchUser = async (e) => {
         const response = await fetchUserData(loginDetails);
 
-        if (response?.code === 2000) {
+        if (response?.code === 200) {
             setError(loginDefault);
 
             setLoginDetails({

@@ -12,6 +12,8 @@ public class CodeConstant {
 
     public static final int RESOURCE_ALREADY_EXIST = 409;
 
+    public static final int NO_DATA_FOUND_CODE = 404;
+
     public static final String SYSTEM_ERROR_STATUS = "System Error";
 
     public static final String BAD_REQUEST_STATUS = "Bad Request";
@@ -24,7 +26,11 @@ public class CodeConstant {
 
     public static final String SAVE_USER_DETAIL_SUCCESS = "SAVE_USER_DETAIL_SUCCESS";
 
+    public static final String GET_USER_DETAIL_SUCCESS = "GET_USER_DETAIL_SUCCESS";
+
     public static final String SUCCESS = "SUCCESS";
 
-    private static final String FAILURE = "FAILURE";
+    public static final String FAILURE = "FAILURE";
+
+    public static final String NO_DATA_FOUND = "NO_DATA_FOUND";
 }
