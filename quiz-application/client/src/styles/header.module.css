@@ -1,0 +1,5 @@
+.container > p {
+    font-size: 60px;
+    background-color: var(--color-FFFFFF);
+    width: fit-content;
+}

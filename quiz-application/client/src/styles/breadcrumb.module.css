@@ -1,0 +1,19 @@
+.breadcrumb {
+    margin-top: 10px;
+    padding: 0 5px;
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-FFFFFF);
+    width: fit-content;
+}
+
+.breadcrumbItem {
+    margin-right: 10px;
+}
+
+.breadcrumbItem::after {
+    content: "/";
+    margin-left: 10px;
+}

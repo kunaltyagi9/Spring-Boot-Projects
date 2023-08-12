@@ -1,0 +1,17 @@
+.container {
+    padding: 50px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D088E5;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.cover {
+    background-color: var(--color-FFFFFF);
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}

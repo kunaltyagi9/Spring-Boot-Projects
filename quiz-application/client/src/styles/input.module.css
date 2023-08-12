@@ -1,0 +1,10 @@
+.inputText {
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 4px 4px 0 0;
+    margin-top: 20px;
+    /* color: var(--color-FFFFFF); */
+}
