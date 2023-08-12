@@ -1,1 +1,2 @@
-export const logo = 'https://1000logos.net/wp-content/uploads/2020/09/Ems-Logo.png';
+export const companyLogo = 'https://cdn.cookielaw.org/logos/bf68afa0-3c8d-4d2e-9472-6b54f14f5822/c0260794-d5a4-4dee-be60-c94a329c4569/14f6654a-d2ca-4468-a2e3-1c154ca392fd/Gilead_Logo_standard_RGB.png';
+export const sideBarImage='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZW1wbG95ZWV8ZW58MHx8MHx8&w=1000&q=80';

@@ -1,18 +1,30 @@
 
 import { routes } from "../routes/routes"
-import { PersonAdd, ViewStream } from '@mui/icons-material';
+import { PersonAdd, ViewStream, HomeOutlined } from '@mui/icons-material';
 
 export const SIDEBAR_DATA = [
+    {
+        name: 'home',
+        title: 'Home',
+        icon: HomeOutlined,
+        activeIcon: '',
+        path: routes.main.path,
+        headerRow: true,
+    },
     {
         name: 'addemployee',
         title: 'Add Employee',
         icon: PersonAdd,
-        path: routes.main.path
+        activeIcon: '',
+        path: routes.main.path,
+        headerRow: false,
     },
     {
-        name: 'allemployees',
-        title: 'All Employees',
+        name: 'employees',
+        title: 'Employees',
         icon: ViewStream,
-        path: routes.main.path
+        activeIcon: '',
+        path: routes.main.path,
+        headerRow: false,
     },
 ];
