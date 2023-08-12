@@ -7,4 +7,6 @@ import org.springframework.http.ResponseEntity;
 public interface UserProfileService {
 
     public ResponseEntity<Object> saveUserData(UserProfileDTO userProfileDTO, RequestHeaderDTO requestHeaderDTO);
+
+    public ResponseEntity<Object> getUserData(RequestHeaderDTO requestHeaderDTO);
 }
